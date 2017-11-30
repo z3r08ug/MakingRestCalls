@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dev.uublabs.makingrestcalls.MainActivity">
+    <!--using Native-->
+    <Button
+        android:id="@+id/btnNativeHttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="makingRestCalls"
+        android:text="Native Http"
+        android:textSize="@dimen/std_textsize" />
+    <!--using okhttp library-->
+    <Button
+        android:id="@+id/btnOkHttpSync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="makingRestCalls"
+        android:text="OkHttp Sync"
+        android:textSize="@dimen/std_textsize" />
+
+    <Button
+        android:id="@+id/btnOkHttpASync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="makingRestCalls"
+        android:text="OkHttp ASync"
+        android:textSize="@dimen/std_textsize" />
+    <!--using retrofit library-->
+    <Button
+        android:id="@+id/btnRetrofitSync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="makingRestCalls"
+        android:text="Retrofit Sync"
+        android:textSize="@dimen/std_textsize" />
+
+    <Button
+        android:id="@+id/btnretrofitAsync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="makingRestCalls"
+        android:text="Retrofit ASync"
+        android:textSize="@dimen/std_textsize" />
+
+    <TextView
+        android:id="@+id/tvResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Placeholder for response"
+        android:textSize="@dimen/std_textsize" />
+
+</LinearLayout>
